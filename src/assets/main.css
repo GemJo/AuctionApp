@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Slab:wght@300;400;500;600&display=swap');
+@import './base.css';
+body {
+  background-image: linear-gradient(to left top, #103152, #005377, #007898, #009eb2, #1ac5c5);
+}
+#app {
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 6rem;
+  font-weight: normal;
+}
+.v-card .v-card-title {
+  white-space: normal;
+}
+h1 {
+  line-height: 38px;
+}
+.weather {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.weather .v-card {
+  width: 50%;
+  border-radius: 10px;
+}
+.weather .v-card .v-card-title {
+  display: flex;
+  justify-content: space-between;
+}
+.weather .v-card .v-card-title button.v-btn{
+  margin-left: 5px;
+}
+.weather .v-card .v-card-text{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.weather .v-card .v-card-text .weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather .v-card .v-card-text .weather-info p{
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+button.auction-match.v-btn {
+  border-right: 10px;
+  margin-top: 20px;
+  min-height: 40px;
+}
+button.auction-match.v-btn .v-btn__content {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.v-tabs {
+  background: #ffffff;
+  border-radius: 10px 10px 0 0;
+}
+.v-window .v-card {
+  border-radius: 0 0 10px 10px;
+}
+
+button.v-tab {
+  background: transparent;
+}
+
+.v-slide-group.v-tabs {
+  background: var(--bg-muted);
+}
+
+.v-slide-group.v-tabs button {
+  border-radius: 10px 10px 0 0;
+  color: var(--text-muted);
+}
+
+.v-slide-group.v-tabs button:hover {
+  color: var(--primary-darken-1);
+}
+
+.v-slide-group.v-tabs button .v-btn__content {
+  font-weight: 500;
+}
+
+.v-slide-group.v-tabs button.v-slide-group-item--active {
+  background: #fff;
+  color: var(--primary-darken-1)
+}
+
+.feedback-message {
+  display: flex;
+  column-gap: 5px;
+}
+
+.check-sale__result .v-toolbar__content .v-toolbar-title{
+  margin-inline-start: 0;
+  text-align: center;
+}
+
+.check-sale__result .v-card-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.check-sale__result .v-card-text {
+  margin: 20px 0;
+}
+.check-sale__result .v-card-text p {
+  text-align: center;
+  color: var(--text-muted);
+}
+.check-sale__result .v-card-text p span {
+  font-size: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 960px) {
+  #app {
+    padding: 2rem;
+  }
+  .weather .v-card {
+    width: 60%
+  }
+}
+@media only screen and (max-width: 600px) {
+  #app {
+    padding: 2rem 0.5rem;
+  }
+  .weather .v-card {
+    width: 100%
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #app {
+    padding: 2rem 20rem;
+  }
+}
